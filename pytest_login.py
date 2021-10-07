@@ -18,9 +18,9 @@ def test_login_success(setup): #testcase 001
     Badge = setup.find_elements_by_xpath('/html/body/div[1]/div[2]/div/div/main/article/div/div/div/p[1]/strong[1]')[0].text
     assert Badge == 'jajang'
     
-Accounts = [('jajang@smail.com','mail123123'),
-            ('jajang@mail.com','mail123123_'),
-            ('jajang@mail.com','mail123123_')]
+Accounts = [('jajang@mail.com','mail123123_'),
+            ('jajang@smail.com',''),
+            ('','smail123123_')]
 
 @pytest.mark.parametrize('a,b', Accounts)
 def test_login_unsuccess(setup,a,b): #testcase 002,003,004
