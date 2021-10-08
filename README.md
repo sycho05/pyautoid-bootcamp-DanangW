@@ -13,7 +13,7 @@ pip install pytest-html
 ```
 ## Menjalankan Program
 ```
-pytest --html=report.html
+pytest pytest_login.py --html=report.html
 ```
 
 
